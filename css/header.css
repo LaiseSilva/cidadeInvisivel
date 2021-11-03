@@ -6,17 +6,44 @@ header {
   align-items: center;
   padding: 0 80px;
 }
-.menu ul {
+.menu > ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 .menu a {
+  display: flex;
   color: #fff;
+  align-items: center;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   transition: color 0.6s;
 }
-.menu a:hover {
-  color: #f00;
+.dropdown-menu > li > a:hover {
+  color: #e50914;
+}
+
+.dropdown-menu > li:hover .dropdown-submenu {
+  display: flex;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #0005;
+  width: 145px;
+  height: 200px;
+  margin-top: 5px;
+}
+
+.dropdown-submenu li {
+  padding: 3px;
+}
+
+.dropdown-submenu li:hover {
+  background-color: #e50914;
 }

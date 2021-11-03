@@ -3,7 +3,8 @@ body {
   height: 100vh;
   background-image: url(../img/background-curupira.png);
   background-size: cover;
-  background-position: right top;
+  background-position: left top;
+  background-repeat: no-repeat;
   background-color: #0007;
   background-blend-mode: darken;
   display: flex;

@@ -4,18 +4,35 @@ main {
   flex-direction: column;
   padding: 0 80px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
-  width: 531px;
+  width: 600px;
   margin-left: 150px;
 }
 
 .lenda {
   display: flex;
   background-color: lightcoral;
+  align-items: center;
 }
 
-main h1 {
+.lenda > h2 {
+  position: absolute;
+  font-size: 2rem;
+  color: #e50914;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding-bottom: 550px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+  padding-top: 80px;
+}
+
+.principal > h1 {
   font-size: 100px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
@@ -23,29 +40,26 @@ main h1 {
   font-weight: bold;
 }
 
-main h2 {
-  display: flex;
-  font-size: 1.5rem;
-  color: #e50914;
-}
 main p {
-  font-family: 'Lucida Sans Regular', sans-serif;
-  font-size: 1.5rem;
+  /*font-family: "Lucida Sans Regular", sans-serif;*/
+  font-size: 1.4rem;
   font-weight: 100;
+  padding-left: 25px;
 }
 
 .sobre-personagens {
   margin-top: 50px;
-  border-right: 52px solid #e50914;
+  /*border-right: 52px solid #e50914;*/
 }
 
 .personagem {
-  display: flex;
   justify-content: space-between;
   font-style: italic;
+  display: flex;
 }
 .relacao {
   display: flex;
+  justify-content: space-between;
   font-style: italic;
 }
 .relacao h5 {
